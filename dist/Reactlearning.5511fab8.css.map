@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;AAGA;;;;AAGA;;;;AAGA","sources":["index.css"],"sourcesContent":[".header{\n    display: flex;\n}\n.logo{\n   width: 200px;\n}\n.nav-items>ul{\n    display: flex;\n}\n.nav-items>ul>li{\n    padding: 10px;\n}"],"names":[],"version":3,"file":"Reactlearning.5511fab8.css.map","sourceRoot":"/__parcel_source_root/"}

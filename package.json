@@ -1,0 +1,25 @@
+{
+  "name": "reactlearning",
+  "version": "1.0.0",
+  "description": "this is react learning",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZabeeAhamed/react.git"
+  },
+  "author": "Zabee Ahamed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZabeeAhamed/react/issues"
+  },
+  "homepage": "https://github.com/ZabeeAhamed/react#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
