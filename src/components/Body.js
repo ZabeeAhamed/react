@@ -1,6 +1,8 @@
 import Resturant from "./Resturant"
 import Shimmer from "./Shimmer";
 import { useState,useEffect } from "react";
+import { RES_API } from "../utils/contants";
+import { Link } from "react-router-dom";
 
 
 const Body=()=>{
@@ -14,7 +16,7 @@ const Body=()=>{
     },[])
 
     const fetchData= async ()=> {
-        const data =await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9628669&lng=77.57750899999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const data =await fetch(RES_API);
         const json= await data.json();
         console.log(json.data.cards);
         console.log(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -44,7 +46,10 @@ const Body=()=>{
             }}>Top Rated Resturants</button></div>
             <div className="res-container">
                 {
-                    filterResturant.map((resturant) =>(<Resturant key={resturant.info.id}resData={resturant}/>))
+                    filterResturant.map((resturant) =>(
+                    <Link key={resturant.info.id} to={"/resturant/"+ resturant.info.id}>
+                    <Resturant resData={resturant}/>
+                    </Link>))
 
                 }
             </div>
